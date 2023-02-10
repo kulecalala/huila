@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../imagens/fanda-da-tundavala001.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.877);
+}
+.container {
+    background-color: rgba(0,0,0,.1);
+    width: 100%;
+}
+header {
+    background-color: rgba(0,0,0,1);
+    width: 95%;
+    height: 50px;
+    position: fixed;
+    float: left;
+    color: white;
+    padding: 0 2.5%;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header h1 {
+    margin: 5px 2%;
+    float: left;
+}
+header nav {
+    float: right;
+    width: 40%;
+    height: 50px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+header li {
+    display: inline-block;
+    padding: 10px 2.6%;
+    margin: 5px 1%;
+}
+
+section {
+    background-color: rgba(0, 0, 0, .5);
+    margin-top: 50px;
+    width: 100%;
+    min-height: 290vh;
+    float: left;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid rgba(0,0,0, 0);
+}
+
+/** Slide show de imagens*/
+#slide-show {
+  margin: 0 auto;
+  padding: 0;
+  width: 94%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.slides {
+  width: 400%;
+  height: 500px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img {
+  width: 100%;
+  height: 500px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: 370px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background-color: #FFF;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto {
+  position: absolute;
+  width: 94%;
+  margin-top: 428px;
+  display: flex;
+  justify-content: center;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: white;
+}
+
+
+/** Fim slide show de imagem*/
+
+#topo-home {
+    background-color: black;
+    width: 94%;
+    height: 200px;
+    float: left;
+    margin: 5px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28pt;
+    text-transform: uppercase;
+}
+#topo-home h1, h4 {
+    margin: 8px 0;
+    padding: 0 1%;
+}
+section#conteudos {
+    background-color: rgba(0,0,0,.1);
+    width: 70%;
+    padding: 2px .5%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 5px;
+}
+section#conteudos p {
+  text-align: justify;
+  text-indent: 20px;
+}
+section#conteudos figure.caption {
+
+}
+section#conteudos figcaption {
+
+}
+section#conteudos legend {
+
+}
+section#conteudos img {
+  width: 500px;
+  height: 300px;
+}
+section#conteudos iframe {
+  width: 100%;
+  height: 400px;
+}
+aside#sugestoes {
+  background-color: rgba(0,0,0,1);
+  width: 22%;
+  height: 85vh;
+  float: left;
+  display: flex;
+  margin: 5px 0 0 1%;
+}
+aside#sugestoes h1 {
+  float: left;
+  width: 96%;
+  padding: 5px 2%;
+  margin: 0;
+  height: 24px;
+}
+aside#sugestoes ul {
+  list-style: none;
+}
+aside#sugestoes li {
+
+}
+
+footer {
+    background-color: black;
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 10pt;
+    color: white;
+}
+footer a {
+    color:antiquewhite;
+    text-decoration: none;
+}
